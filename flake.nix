@@ -11,6 +11,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
+      
       devShell.${system} = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
           # needed by nix
@@ -22,7 +23,9 @@
           gnumake
 
           # go dev
-          go
+          cargo 
+          rustc
+          rustfmt
         ];
       };
     };
