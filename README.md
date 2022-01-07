@@ -24,6 +24,11 @@ of a good base image and a best in class package manager, gives
 you versatile, reproduible and deterministic development container
 that you can use for everywhere.
 
+## Prerequisite
+** [Docker-Compose](https://docs.docker.com/compose/install/)
+
+** [Dev-Container](https://code.visualstudio.com/docs/remote/containers)
+
 ### Components
 
 - **[Debian slim](https://hub.docker.com/_/debian) docker image**
@@ -62,15 +67,12 @@ to set up your machine, install docker and vscode remote extensions.
 
 There are sevaral example templates you can use to quickly bootstrap your project:
 
-- [nix-devcontainer-golang](https://github.com/xtruder/nix-devcontainer-golang/)
+- [nix-devcontainer-rust](https://nixos.wiki/wiki/Rust/)
   
-  Example project using `nix-devcontainer` for golang development, with docker-compose
+  Example project using `nix-devcontainer` for rust development, with docker-compose
   running docker-in-docker service for building docker images.
 
-- [nix-devcontainer-python-jupyter](https://github.com/xtruder/nix-devcontainer-python-jupyter/)
-  
-  Example project using `nix-devcontainer` for python and jupyter notebooks,
-  with python packages managed by nix.
+
 
 ### Project setup
 
